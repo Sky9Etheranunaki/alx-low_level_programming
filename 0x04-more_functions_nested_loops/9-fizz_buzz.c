@@ -1,5 +1,5 @@
-#include "maim.h"
-#include <stdio>
+#include <stdio.h>
+#include "main.h"
 
 /**
  * main - FizzBuzz

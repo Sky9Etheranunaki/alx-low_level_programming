@@ -1,18 +1,22 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_chessboard - prints chessboard
- * @a: double pointer
- * Return: 0
+ * print_chessboard - Write a function that prints the chessboard.
+ *
+ * @a: This is my variable
+ *
  */
+
 void print_chessboard(char (*a)[8])
 {
-	unsigned int i, j;
+	int count, index;
 
-	for (i = 0; i < 8; i++)
+	for (count = 0; count < 8; count++)
 	{
-		for (j = 0; j < 8; j++)
-			_putchar(a[i][j]);
-			_putchar('\n');
+		for (index = 0; index < 8; index++)
+		{
+			_putchar(a[count][index]);
+		}
+		_putchar('\n');
 	}
 }
